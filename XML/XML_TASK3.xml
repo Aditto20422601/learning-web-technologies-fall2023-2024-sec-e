@@ -1,0 +1,23 @@
+<Clints>
+    <CLint>
+        <ID> 1 </ID>
+        <Name> John Doe </Name>
+        <Address> H# 38,r#3, Banani, Dhaka </Address>
+        <Department> Slaes </Department>
+        <Salary> $20000 </salary>
+    </CLint>
+    <CLint>
+        <ID> 2 </ID>
+        <Name> Mark Zuckerberg </Name>
+        <Address> Flat#A/1 H# 20, r#18, Mirpur, Dhaka </Address>
+        <Department> Accounts </Department>
+        <Salary> $12000 </salary>
+    </CLint>
+    <CLint>
+        <ID> 3 </ID>
+        <Name> Ala Voski </Name>
+        <Address> H# 38, r#3, Motijheel </Address>
+        <Department> Human Resource </Department>
+        <Salary> $30000 </salary>
+    </CLint>
+</Clints>
