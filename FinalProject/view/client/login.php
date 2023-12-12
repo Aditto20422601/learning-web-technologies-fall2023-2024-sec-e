@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <script src='../js/validation.js'></script>
+    <script src='../js/client/validation.js'></script>
  
 </head>
 
@@ -24,7 +24,7 @@
                 <p class="error"><?php echo $_GET['error']; ?></p> <br>
             <?php } ?>
 
-            <form class="" action="../controller/loginvalidation.php" method="POST" novalidate>
+            <form class="" action="../controller/client/loginvalidation.php" method="POST" novalidate>
 
 
                 <label for="email">Email</label>

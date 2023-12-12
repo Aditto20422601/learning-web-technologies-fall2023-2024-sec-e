@@ -20,10 +20,10 @@ if (isset($_POST['submit'])) {
 
 
     if($query_run){
-        header("location: ../view/profile.php");
+        header("location: ../view/client/profile.php");
     }
     else{
-        header("location: ../view/login.php");
+        header("location: ../view/client/login.php");
     }
 
 }

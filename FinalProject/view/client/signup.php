@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
-    <script src='../js/validation.js'></script>
+    <script src='../js/client/validation.js'></script>
 
 
 </head>
@@ -15,7 +15,7 @@
     <center>
         <section >
             <h2>Signup</h2>
-            <form name="" action="../controller/signupvalidation.php" method="post" novalidate>
+            <form name="" action="../controller/client/signupvalidation.php" method="post" novalidate>
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="enter username" onkeyup="checkUsername()" onblur="checkUsername()"> <br> <br>
                 <span id="usernameErr"><?php echo $nameErr;?></span><br>

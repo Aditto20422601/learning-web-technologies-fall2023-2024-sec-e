@@ -1,5 +1,5 @@
 <?php
-require_once('../model/usermodel.php');
+require_once('../model/client/usermodel.php');
 
 $conn = getConnection();
 

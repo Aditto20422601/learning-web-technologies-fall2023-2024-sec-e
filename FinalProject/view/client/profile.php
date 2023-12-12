@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('../model/usermodel.php');
-require_once('../model/db.php');
+require_once('../model/client/usermodel.php');
+require_once('../model/client/db.php');
 
 if (isset($_SESSION['flag'])) {
 
@@ -41,7 +41,7 @@ if (isset($_SESSION['flag'])) {
                 <h2>Usertype : <?= $row['usertype'] ?></h2>
                 <br><br>
 
-                <center><button><a href="../view/updateprofile.php?edit=<?php echo $row['id']; ?>">Update</a></button></center>
+                <center><button><a href="../view/client/updateprofile.php?edit=<?php echo $row['id']; ?>">Update</a></button></center>
 
             </div>
 

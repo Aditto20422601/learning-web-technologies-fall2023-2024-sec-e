@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('../model/usermodel.php');
-require_once('../model/db.php');
+require_once('../model/client/usermodel.php');
+require_once('../model/client/db.php');
 ?>
 
 <?php
@@ -40,7 +40,7 @@ $row = mysqli_fetch_assoc($result);
         ?>
 
 
-                    <form action="../controller/profilecontroller.php?edit=<?php echo $row['id']; ?>" method="POST">
+                    <form action="../controller/client/profilecontroller.php?edit=<?php echo $row['id']; ?>" method="POST">
 
 
 

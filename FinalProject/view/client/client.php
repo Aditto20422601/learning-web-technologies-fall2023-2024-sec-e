@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../model/usermodel.php');
+require_once('../model/client/usermodel.php');
 
 if (isset($_SESSION['flag'])) {
 
@@ -33,12 +33,12 @@ if (isset($_SESSION['flag'])) {
     <body>
         <center>
             <div class="welcome">
-                <h1>Welcome <?= $row['username'] ?></h1>
+                <h1>Welcome <?php $row['username'] ?></h1>
             </div>
 
             <div class="profile">
-                <button> <a href="../view/profile.php">My Profile</a> </button>
-                <button> <a href="../controller/logout.php">Logout</a> </button>
+                <button> <a href="../view/client/profile.php">My Profile</a> </button>
+                <button> <a href="../controller/client/logout.php">Logout</a> </button>
             </div>
         </center>
 
@@ -48,12 +48,12 @@ if (isset($_SESSION['flag'])) {
 
             <div class="card">
                 <h1>Project overview</h1>
-                <button> <a href="../view/overview.php">GO</a> </button>
+                <button> <a href="../view/client/overview.php">GO</a> </button>
             </div>
 
             <div class="card">
                 <h1>Feedback</h1>
-                <button> <a href="../view/feedback.php">GO</a> </button>
+                <button> <a href="../view/client/feedback.php">GO</a> </button>
             </div>
 
             <div class="card">
@@ -73,4 +73,6 @@ if (isset($_SESSION['flag'])) {
 
     </html>
 
-<?php } ?>
+<?php 
+} 
+?>

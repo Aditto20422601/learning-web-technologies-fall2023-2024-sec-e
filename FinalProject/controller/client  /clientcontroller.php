@@ -1,6 +1,6 @@
 <?php
 
-@include '../Model/db.php';
+@include '../Model/client/db.php';
 
 
 if (isset($_POST['feedback'])) {
@@ -13,7 +13,7 @@ if (isset($_POST['feedback'])) {
 
     if ($insert_query) {
 
-         header("location: ../View/client.php");
+         header("location: ../View/client/client.php");
 
     } else {
         echo"error";
@@ -32,7 +32,7 @@ if (isset($_POST['pay'])) {
 
     if ($insert_query) {
 
-         header("location: ../View/client.php");
+         header("location: ../View/client/client.php");
 
     } else {
         echo"error";

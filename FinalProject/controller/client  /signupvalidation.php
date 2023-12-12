@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('../model/usermodel.php');
+require_once('../model/client/usermodel.php');
 
 if (isset($_POST['signup'])) {
 
@@ -65,7 +65,7 @@ if (isset($_POST['signup'])) {
     }
 
 
-    include('../view/signup.php');
+    include('../view/client/signup.php');
     if (empty($emailerror) &&  empty($invalidemail) &&  empty($passworderror) &&  empty($usernameerror) &&  empty($phoneerror) &&  empty($doberror) &&  empty($usertypeerror) &&  empty($addresserror)) {
         
         $conn = getConnection();
@@ -84,7 +84,7 @@ if (isset($_POST['signup'])) {
         $status = insertUser($userinfo);
         if ($status) {
 
-            header('location: ../view/login.php');
+            header('location: ../view/client/login.php');
 
         } 
         else {

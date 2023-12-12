@@ -1,6 +1,6 @@
 <?php
 session_start();
-@include '../model/db.php';
+@include '../model/client/db.php';
 if (isset($_SESSION['flag'])) {
 
 ?>

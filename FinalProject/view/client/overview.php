@@ -1,6 +1,6 @@
 <?php
 session_start();
-@include '../model/db.php';
+@include '../model/client/db.php';
 if (isset($_SESSION['flag'])) {
 
 ?>
@@ -19,6 +19,22 @@ if (isset($_SESSION['flag'])) {
             td {
                 border: 1px solid black;
                 border-collapse: collapse;
+                padding: 10px;
+                width: 700px;
+            }
+            body{
+                margin: 0px;
+                background:#F7F7F7;
+            }
+            .header{
+                background: #333;
+                color: #fff;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+            }
+            th{
+                background: #C8E5A1;
             }
         </style>
 
@@ -26,7 +42,10 @@ if (isset($_SESSION['flag'])) {
 
     <body>
 
+        <div class="header">
 
+            <h3 >Collborative Management System </h3>
+        </div>
 
 
 
@@ -80,4 +99,6 @@ if (isset($_SESSION['flag'])) {
     </body>
 
     </html>
-<?php } ?>
+<?php 
+} 
+?>

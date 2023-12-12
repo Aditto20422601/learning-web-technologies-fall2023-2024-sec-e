@@ -1,6 +1,6 @@
 <?php
 
-require_once('../model/usermodel.php');
+require_once('../model/client/usermodel.php');
 
 session_start();
 
@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
         $passworderror = "password required";
     }
 
-    include('../view/login.php');
+    include('../view/client/login.php');
 
 
     if (empty($emailerror) &&  empty($invalidemail) &&  empty($passworderror)) {
@@ -46,7 +46,7 @@ if (isset($_POST['login'])) {
                 setcookie('status', 'true', time() + 30000, '/');
 
 
-                header("location: ../view/client.php");
+                header("location: ../view/client/client.php");
             } 
            
            
@@ -54,7 +54,7 @@ if (isset($_POST['login'])) {
       
 
         else {
-            header("Location: ../view/login.php?error=Incorect User name or password");
+            header("Location: ../view/client/login.php?error=Incorect User name or password");
         }
     }
 }
